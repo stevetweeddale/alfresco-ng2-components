@@ -32,7 +32,7 @@ export class ContentServicesPage {
     tableBody = element.all(by.css('adf-document-list div[class="adf-datatable-body"]')).first();
     contentServices = element(by.css('a[data-automation-id="Content Services"]'));
     currentFolder = element(by.css('div[class*="adf-breadcrumb-item active"] div'));
-    createFolderButton = element(by.cssContainingText('mat-icon', 'create_new_folder'));
+    createFolderButton = element(by.css('button[data-automation-id="create-new-folder"]'));
     activeBreadcrumb = element(by.css('div[class*="active"]'));
     tooltip = by.css('div[class*="--text full-width"] span');
     uploadFileButton = element(by.css('input[data-automation-id="upload-single-file"]'));
